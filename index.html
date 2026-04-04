@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATS Job Hunter v2</title>
+    <meta name="description" content="Search across 14 ATS platforms in 13 locations for Python software engineering roles.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="logo">⌖ ATS Job Hunter</div>
+        <div class="topbar-keywords">
+            <input type="text" id="kw1" class="kw-input" value="software" placeholder="role keyword" spellcheck="false">
+            <span class="kw-dot">·</span>
+            <input type="text" id="kw2" class="kw-input" value="python" placeholder="skill keyword" spellcheck="false">
+            <span class="kw-dot">·</span>
+            <span class="kw-label">Remote-first</span>
+        </div>
+        <div class="topbar-right">
+            <span class="pill">13 Locations</span>
+            <span class="pill">14 ATS Platforms</span>
+        </div>
+    </div>
+
+    <div class="layout">
+        <!-- SIDEBAR -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-section">Global</div>
+            <button class="loc-btn active" onclick="setLoc('global', this)">
+                <span class="flag">🌍</span><span class="loc-name">Global Remote</span><span class="count"
+                    id="cnt-global">7</span>
+            </button>
+
+            <div class="sidebar-section">Oceania</div>
+            <button class="loc-btn" onclick="setLoc('au', this)">
+                <span class="flag">🇦🇺</span><span class="loc-name">Australia</span><span class="count"
+                    id="cnt-au">5</span>
+            </button>
+            <button class="loc-btn" onclick="setLoc('nz', this)">
+                <span class="flag">🇳🇿</span><span class="loc-name">New Zealand</span><span class="count"
+                    id="cnt-nz">4</span>
+            </button>
+
+            <div class="sidebar-section">Europe</div>
+            <button class="loc-btn" onclick="setLoc('eu', this)">
+                <span class="flag">🇪🇺</span><span class="loc-name">Europe (General)</span><span class="count"
+                    id="cnt-eu">7</span>
+            </button>
+            <button class="loc-btn" onclick="setLoc('nl', this)">
+                <span class="flag">🇳🇱</span><span class="loc-name">Netherlands</span><span class="count"
+                    id="cnt-nl">5</span>
+            </button>
+            <button class="loc-btn" onclick="setLoc('de', this)">
+                <span class="flag">🇩🇪</span><span class="loc-name">Germany</span><span class="count"
+                    id="cnt-de">5</span>
+            </button>
+            <button class="loc-btn" onclick="setLoc('es', this)">
+                <span class="flag">🇪🇸</span><span class="loc-name">Spain</span><span class="count"
+                    id="cnt-es">4</span>
+            </button>
+            <button class="loc-btn" onclick="setLoc('pt', this)">
+                <span class="flag">🇵🇹</span><span class="loc-name">Portugal</span><span class="count"
+                    id="cnt-pt">4</span>
+            </button>
+
+            <div class="sidebar-section">Asia</div>
+            <button class="loc-btn" onclick="setLoc('sg', this)">
+                <span class="flag">🇸🇬</span><span class="loc-name">Singapore</span><span class="count"
+                    id="cnt-sg">5</span>
+            </button>
+            <button class="loc-btn" onclick="setLoc('in', this)">
+                <span class="flag">🇮🇳</span><span class="loc-name">India</span><span class="count"
+                    id="cnt-in">4</span>
+            </button>
+            <button class="loc-btn" onclick="setLoc('ea', this)">
+                <span class="flag">🌏</span><span class="loc-name">East Asia</span><span class="count"
+                    id="cnt-ea">4</span>
+            </button>
+            <button class="loc-btn" onclick="setLoc('ae', this)">
+                <span class="flag">🇦🇪</span><span class="loc-name">UAE / Dubai</span><span class="count"
+                    id="cnt-ae">4</span>
+            </button>
+
+            <div class="sidebar-section">Americas</div>
+            <button class="loc-btn" onclick="setLoc('us', this)">
+                <span class="flag">🇺🇸</span><span class="loc-name">US (No Visa)</span><span class="count"
+                    id="cnt-us">5</span>
+            </button>
+        </nav>
+
+        <!-- MAIN -->
+        <main class="main" id="main">
+            <!-- Rendered by JS -->
+        </main>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
