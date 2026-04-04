@@ -32,10 +32,15 @@ function renderSyntax(q) {
         .replace(/\b(australia|new zealand|auckland|sydney|melbourne|brisbane|wellington|netherlands|amsterdam|rotterdam|eindhoven|germany|berlin|munich|hamburg|spain|madrid|barcelona|portugal|lisbon|porto|singapore|india|bangalore|hyderabad|mumbai|pune|japan|korea|taiwan|tokyo|seoul|UAE|dubai|europe)\b/gi, '<span class="t-loc">$1</span>');
 }
 
+function escapeAttr(s) {
+    return s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
 function buildCard(cardData) {
     const a = ATS[cardData.ats];
     const q = resolveQuery(cardData.q);
     const syntax = renderSyntax(q);
+    const safeQ = escapeAttr(cardData.q);
     return `
     <div class="ats-card">
       <div class="card-header">
@@ -47,8 +52,8 @@ function buildCard(cardData) {
         <div class="q-row">
           <div class="q-text">${syntax}</div>
           <div class="q-actions">
-            <button class="btn-go" onclick="openGoogle(${JSON.stringify(cardData.q)})">Search ↗</button>
-            <button class="btn-cp" onclick="copyQ(this, ${JSON.stringify(cardData.q)})">Copy</button>
+            <button class="btn-go" data-query="${safeQ}" onclick="openGoogle(this.dataset.query)">Search ↗</button>
+            <button class="btn-cp" data-query="${safeQ}" onclick="copyQ(this, this.dataset.query)">Copy</button>
           </div>
         </div>
       </div>
