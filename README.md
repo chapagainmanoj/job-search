@@ -9,7 +9,7 @@ A single-page tool for running targeted Google dork searches across **14 ATS (Ap
 ## Features
 
 - **14 ATS Platforms** — Ashby, Lever, Greenhouse, Workable, Recruitee, SmartRecruiters, Teamtailor, Personio, PageUp, Workday, Breezy HR, Pinpoint, Zoho Recruit, and Taleo
-- **13 Locations** — Global Remote, Australia, New Zealand, Europe, Netherlands, Germany, Spain, Portugal, Singapore, India, East Asia, UAE/Dubai, and US (No Visa)
+- **13 Locations** — Global Remote, Australia, New Zealand, Europe, Netherlands, Germany, Spain, Portugal, Singapore, India, South East Asia, UAE/Dubai, and US (No Visa)
 - **Editable Keywords** — Change the role and skill keywords in the topbar; all queries update in real-time
 - **Syntax Highlighting** — Queries are color-coded: site (blue), keywords (green), location (teal), OR groups (yellow), exclusions (red)
 - **One-Click Actions** — Search on Google, copy the query, run all searches for a location, or open all job boards at once

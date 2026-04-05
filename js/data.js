@@ -130,13 +130,15 @@ const LOCS = {
         ]
     },
     ea: {
-        flag: '🌏', title: 'East Asia',
-        desc: 'Japan, South Korea, Taiwan, Hong Kong — tech hubs across East Asia',
+        flag: '🌏', title: 'South East Asia',
+        desc: 'Thailand, Vietnam, Philippines, Malaysia, Indonesia — tech hubs across South East Asia',
         cards: [
-            { ats: 'smart', q: 'site:jobs.smartrecruiters.com {{KW1}} {{KW2}} (japan OR korea OR taiwan OR "hong kong" OR tokyo OR seoul) -intern -junior' },
-            { ats: 'gh', q: 'site:job-boards.greenhouse.io {{KW1}} {{KW2}} (japan OR korea OR taiwan OR "hong kong" OR tokyo OR seoul) -intern -junior' },
-            { ats: 'lever', q: 'site:jobs.lever.co {{KW1}} {{KW2}} (japan OR korea OR taiwan OR "hong kong") -intern -junior' },
-            { ats: 'workable', q: 'site:apply.workable.com {{KW1}} {{KW2}} (japan OR korea OR taiwan OR "hong kong") -intern -junior' },
+            { ats: 'gh', q: 'site:job-boards.greenhouse.io {{KW1}} {{KW2}} (thailand OR vietnam OR philippines OR malaysia OR indonesia OR bangkok OR "ho chi minh" OR jakarta OR "kuala lumpur") -intern -junior' },
+            { ats: 'lever', q: 'site:jobs.lever.co {{KW1}} {{KW2}} (thailand OR vietnam OR philippines OR malaysia OR indonesia OR bangkok OR "ho chi minh" OR jakarta) -intern -junior' },
+            { ats: 'ashby', q: 'site:jobs.ashbyhq.com {{KW1}} {{KW2}} (thailand OR vietnam OR philippines OR malaysia OR indonesia OR bangkok OR jakarta) -intern -junior' },
+            { ats: 'smart', q: 'site:jobs.smartrecruiters.com {{KW1}} {{KW2}} (thailand OR vietnam OR philippines OR malaysia OR indonesia OR bangkok OR "ho chi minh" OR jakarta) -intern -junior' },
+            { ats: 'workday', q: 'site:myworkdayjobs.com {{KW1}} {{KW2}} (thailand OR vietnam OR philippines OR malaysia OR indonesia OR bangkok OR jakarta) -intern -junior' },
+            { ats: 'workable', q: 'site:apply.workable.com {{KW1}} {{KW2}} (thailand OR vietnam OR philippines OR malaysia OR indonesia) -intern -junior' },
         ]
     },
     ae: {
