@@ -1,4 +1,4 @@
-# ⌖ ATS Job Hunter v2
+# ⌖ ATS Job Search
 
 A single-page tool for running targeted Google dork searches across **14 ATS (Applicant Tracking System) platforms** in **13 locations** worldwide. Edit your keywords once — every query updates instantly.
 
