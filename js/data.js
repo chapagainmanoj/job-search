@@ -112,7 +112,7 @@ const LOCS = {
         flag: '🇸🇬', title: 'Singapore',
         desc: 'On-site or hybrid in Singapore — Asia tech hub',
         cards: [
-            { ats: 'ashby', q: 'site:jobs.ashbyhq.com {{KW1}} {{KW2}} (singapore OR remote) -intern -junior -"US only" -"USA only" -Canada' },
+            { ats: 'ashby', q: 'site:jobs.ashbyhq.com {{KW1}} {{KW2}} (singapore OR remote) -intern -junior -"US" -"US only" -"USA only" -Canada' },
             { ats: 'lever', q: 'site:jobs.lever.co {{KW1}} {{KW2}} singapore -intern -junior' },
             { ats: 'gh', q: 'site:job-boards.greenhouse.io {{KW1}} {{KW2}} singapore -intern -junior' },
             { ats: 'smart', q: 'site:jobs.smartrecruiters.com {{KW1}} {{KW2}} singapore -intern -junior' },
@@ -133,7 +133,7 @@ const LOCS = {
         flag: '🌏', title: 'South East Asia',
         desc: 'Thailand, Vietnam, Philippines, Malaysia, Indonesia — tech hubs across South East Asia',
         cards: [
-            { ats: 'gh', q: 'site:job-boards.greenhouse.io {{KW1}} {{KW2}} (thailand OR vietnam OR philippines OR malaysia OR indonesia OR bangkok OR "ho chi minh" OR jakarta OR "kuala lumpur") -intern -junior' },
+            { ats: 'gh', q: 'site:job-boards.greenhouse.io {{KW1}} {{KW2}} (thailand OR vietnam OR philippines OR malaysia OR indonesia OR bangkok OR "ho chi minh" OR jakarta OR "kuala lumpur") -US -USA -Canada -intern -junior' },
             { ats: 'lever', q: 'site:jobs.lever.co {{KW1}} {{KW2}} (thailand OR vietnam OR philippines OR malaysia OR indonesia OR bangkok OR "ho chi minh" OR jakarta) -intern -junior' },
             { ats: 'ashby', q: 'site:jobs.ashbyhq.com {{KW1}} {{KW2}} (thailand OR vietnam OR philippines OR malaysia OR indonesia OR bangkok OR jakarta) -intern -junior' },
             { ats: 'smart', q: 'site:jobs.smartrecruiters.com {{KW1}} {{KW2}} (thailand OR vietnam OR philippines OR malaysia OR indonesia OR bangkok OR "ho chi minh" OR jakarta) -intern -junior' },
